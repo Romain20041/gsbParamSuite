@@ -49,6 +49,12 @@ header {
 	float: left;
 }
 
+#filtres {
+	float: left;
+}
+
+
+
 #produits {
 	padding: 0 150px;
 	display: flex;
@@ -78,7 +84,6 @@ header {
 
 #card {
 	width: 180px;
-	height: 350px;
 	padding: 10px;
 	margin: 10px;
 	background-color: var(--fondC);

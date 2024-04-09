@@ -46,4 +46,16 @@ class ControleurVoirProduits
         $lesCategories = $this->modeleFront->getLesCategories();
         include("vues/v_choixCategorie.php");
     }
+    
+    function filtrerParPrix() {
+        $resultat = array();
+    
+        foreach ($articles as $article) {
+            if ($article['prix'] >= $prixMin && $article['prix'] <= $prixMax) {
+                $resultat[] = $article;
+            }
+        }
+    
+        return $resultat;
+    }
 }
