@@ -27,14 +27,14 @@ class ControleurGererProfil
 		$ville = $_REQUEST['ville'];
 		$cp = $_REQUEST['cp'];
 		$mail = $_REQUEST['mail'];
-		try {
-			$this->modeleFront->updateProfil($id, $nom, $prenom, $rue, $ville, $cp, $mail);
-			$message = "Modification éfectuée";
-			include('vues/v_message.php');
-		} catch(Exception) {
-			$msgErreurs[] = "Erreur lors de la modification";
-			include('vues/v_erreurs.php');
-		}
-		$this->voirProfil($id);
+		// try {
+		// 	$this->modeleFront->updateProfil($id, $nom, $prenom, $rue, $ville, $cp, $mail);
+		// 	$message = "Modification éfectuée";
+		// 	include('vues/v_message.php');
+		// } catch(Exception) {
+		// 	 $msgErreurs[] = "Erreur lors de la modification";
+		// 	 include('vues/v_erreurs.php');
+		// }
+		// $this->voirProfil($id);
 	}
 }
